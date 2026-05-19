@@ -12,6 +12,9 @@ Usage:
 import asyncio
 import sys
 from datetime import datetime
+import os
+
+os.environ["AZURE_EXPERIMENTAL_ENABLE_GENAI_TRACING"] = "true"
 
 # Work orders to process (matching actual Cosmos DB data)
 WORK_ORDERS = ["wo-2024-445", "wo-2024-456",
